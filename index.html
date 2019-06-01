@@ -19,24 +19,39 @@
     <h3>What kind of date do you want?</h3>
     <br>
     <h4>Location</h4>
-    <span class="option"><input type="checkbox" name="indoor">Indoor</span>
-    <span class="option"><input type="checkbox" name="outdoor">Outdoor</span>
-    <br>
+       <input type="checkbox" id="indoor" name="location" value="indoor" onclick="handleLocation()">
+       <label for="indoor">Indoor</label>
+
+       <input type="checkbox" id="outdoor" name="location" value="outdoor" onclick="handleLocation()">
+       <label for="outdoor">Outdoor</label>
+        <br>
     <h4>Length</h4>
-    <span class="option"><input type="checkbox" name="short">Short</span>
-    <span class="option"><input type="checkbox" name="medium">Medium</span>
-    <span class="option"><input type="checkbox" name="long">Long</span>
+        <input type="checkbox" id="short" name="length" value="short" onclick="handleLength()">
+        <label for="indoor">Short</label>
+
+        <input type="checkbox" id="medium" name="length" value="medium" onclick="handleLength()">
+        <label for="medium">Medium</label>
+
+        <input type="checkbox" id="long" name="length" value="long" onclick="handleLength()">
+        <label for="long">Long</label>
     <br>
     <h4>Category</h4>
-    <span class="option"><input type="checkbox" name="short">Meal</span>
-    <span class="option"><input type="checkbox" name="medium">Outing</span>
-    <span class="option"><input type="checkbox" name="medium">Entertainment</span>
-    <span class="option"><input type="checkbox" name="long">Drinks</span>
-    <br>
+        <input type="checkbox" id="meal" name="category" value="meal">
+        <label for="meal">Meal</label>
+
+        <input type="checkbox" id="outing" name="category" value="outing">
+        <label for="outing">Outing</label>
+
+        <input type="checkbox" id="drinks" name="category" value="drinks">
+        <label for="drinks">Drinks</label>
+
+        <input type="checkbox" id="entertainment" name="category" value="entertainment">
+        <label for="entertainment">Entertainment</label>
+     <br>
 </section>
 
 <section class=pick>
-    <div id=dateResult>Result</div>
+    <div id=dateResult>What's it gonna be?</div>
     <button id=pick>Get your date!</button>
 </section>
 
