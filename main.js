@@ -14,10 +14,10 @@ function Date(name, category, location, time) {
     this.time = time;
 }
 
-let dinner = new Date('Dinner', 'Meal', 'Indoor', 'Any');
-let movie = new Date('Movies', 'Outing', 'Indoor', 'Long');
-let museum = new Date('Museum', 'Outing', 'Indoor', 'Medium');
-let arboretum = new Date('Arboretum', 'Outing', 'Outdoor', 'Any');
+let dinner = new Date('dinner', 'Meal', 'Indoor', 'Any');
+let movie = new Date('the movies', 'Outing', 'Indoor', 'Long');
+let museum = new Date('a museum', 'Outing', 'Indoor', 'Medium');
+let arboretum = new Date('the arboretum', 'Outing', 'Outdoor', 'Any');
 
 
 /*----- cached element references -----*/
@@ -33,7 +33,17 @@ function pickDate() {
 
     let randomDate = dateOptions[Math.floor(Math.random() * dateOptions.length)];
 
-    let dateString = "How about" + randomDate + " ?";
+    let dateString = "How about " + randomDate.name + " ?";
 
     dateResult.innerHTML = dateString;
+
+    console.log(randomDate.name);
 }
+
+
+/* 
+Se
+Pick a date from the array 
+Turn object into a string 
+Take the name object from the string, turn it into a string, and pass it into the dateResult 
+*/
