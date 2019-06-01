@@ -13,6 +13,8 @@ const meal = document.getElementById('meal');
 const outing = document.getElementById('outing');
 const entertainment = document.getElementById('entertainment');
 const drinks = document.getElementById('drinks');
+const indoorOutdoor = document.getElementsByName('location');
+const allLength = document.getElementsByName('length');
 
 
 /*----- app's state (variables) -----*/
@@ -38,10 +40,6 @@ let specificOptions = [];
 /*----- event listeners -----*/
 
 pick.addEventListener('click', pickDate);
-
-
-let indoorOutdoor = document.getElementsByName('location');
-let allLength = document.getElementsByName('length');
 
 /*----- functions -----*/
 function handleLocation() {
