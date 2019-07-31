@@ -86,7 +86,9 @@ function handleLength() {
 function pickDate() {
     let randomDate = specificOptions[Math.floor(Math.random() * specificOptions.length)];
 
-    let dateString = "How about " + randomDate.name + " ?";
+    let dateString = "How about " + randomDate.name + "?";
 
     dateResult.innerHTML = dateString;
+
+    console.log(allLength);
 }
